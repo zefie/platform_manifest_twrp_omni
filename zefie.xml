@@ -7,7 +7,7 @@
   <remote  name="lineage"
            fetch="https://github.com/LineageOS/" />
 
-  <project path="kernel/lge/msm8996" name="lge_g6_melina_kernel" remote="zefie" revision="android-7.0" />
+  <project path="kernel/lge/msm8996" name="lge_g6_melina_kernel" remote="zefie" revision="refs/tags/rel6" />
   <project path="device/lge/g6-common" name="android_device_lge_g6-common" remote="zefie" revision="twrp-8.1" />
   <project path="device/lge/us997" name="android_device_lge_us997" remote="zefie" revision="twrp-8.1" />
   <project path="device/lge/h870" name="android_device_lge_h870" remote="zefie" revision="twrp-8.1" />
