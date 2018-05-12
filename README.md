@@ -28,6 +28,5 @@ Then to build:
      export CONFIG_NO_ERROR_ON_MISMATCH=y
      . build/envsetup.sh
      lunch omni_<device>-eng
-     mka adbd
      mka recoveryimage
 
