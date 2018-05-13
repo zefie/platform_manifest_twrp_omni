@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="zefie"
-           fetch="https://github.com/zefie/" />
+  <project path="device/lge/msm8996-common" name="LineageOS/android_device_lge_msm8996-common" remote="github" revision="lineage-15.1" />
+  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="android-7.0" />
+  <project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="twrp-8.1" />
+  <project path="device/lge/common" name="LineageOS/android_device_lge_common" remote="github" revision="lineage-15.1" />
+  <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="twrp-8.1" />
+  <project path="device/lge/h870" name="zefie/android_device_lge_h870" remote="github" revision="twrp-8.1" />
 
-  <remote  name="lineage"
-           fetch="https://github.com/LineageOS/" />
+  <project path="vendor/lge" name="Rashed97/proprietary_vendor_lge" remote="github" revision="lineage-15.1" />
 
-  <project path="kernel/lge/msm8996" name="lge_g6_melina_kernel" remote="zefie" revision="refs/tags/rel6" />
-  <project path="device/lge/g6-common" name="android_device_lge_g6-common" remote="zefie" revision="twrp-8.1" />
-  <project path="device/lge/us997" name="android_device_lge_us997" remote="zefie" revision="twrp-8.1" />
-  <project path="device/lge/h870" name="android_device_lge_h870" remote="zefie" revision="twrp-8.1" />
+  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="lineage-15.1" />
 
   <remove-project name="android_bootable_recovery" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="zefie" revision="android-8.1" />
+  <project path="bootable/recovery" name="zefie/android_bootable_recovery" remote="github" revision="android-8.1" />
 
   <project path="development" name="android_development" remote="omnirom" revision="android-8.1" groups="pdk-cw-fs,pdk-fs" />
-  <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="omnirom" revision="android-8.1" />
+  <!-- <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="omnirom" revision="android-8.1" /> -->
+
+  <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-8.1" />
+
 
 </manifest>
