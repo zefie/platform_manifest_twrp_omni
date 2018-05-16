@@ -3,23 +3,27 @@
 
   <include name="remove-minimal.xml" />
 
-  <project path="device/lge/msm8996-common" name="LineageOS/android_device_lge_msm8996-common" remote="github" revision="lineage-15.1" />
   <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="refs/tags/rel_nr1" />
   <project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="twrp-8.1" />
-  <project path="device/lge/common" name="LineageOS/android_device_lge_common" remote="github" revision="lineage-15.1" />
   <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="twrp-8.1" />
   <project path="device/lge/h870" name="zefie/android_device_lge_h870" remote="github" revision="twrp-8.1" />
+  <project path="device/lge/common" name="LineageOS/android_device_lge_common" remote="github" revision="cm-14.1" />
 
   <project path="vendor/lge" name="Rashed97/proprietary_vendor_lge" remote="github" revision="lineage-15.1" />
 
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="lineage-15.1" />
 
-  <remove-project name="android_bootable_recovery" />
+  <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="zefie/android_bootable_recovery" remote="github" revision="android-8.1" />
 
   <project path="development" name="android_development" remote="omnirom" revision="android-8.1" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="external/busybox" name="TeamWin/android_external_busybox" remote="github" revision="android-8.0" />
   <!-- <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="omnirom" revision="android-8.1" /> -->
 
-  <!-- <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-8.1" /> -->
+  <project path="TeamWin/.repo/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-8.1" clone-depth="1" >
+	<linkfile src="core/java/android/content" dest="frameworks/base/core/java/android/content" />
+	<linkfile src="core/java/android/security" dest="frameworks/base/core/java/android/security" />
+  </project>
 
 </manifest>
