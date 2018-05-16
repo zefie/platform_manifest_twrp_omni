@@ -2,7 +2,7 @@
 <manifest>
 
   <project path="device/lge/msm8996-common" name="LineageOS/android_device_lge_msm8996-common" remote="github" revision="lineage-15.1" />
-  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="android-7.0" />
+  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="refs/tags/rel_nr1" />
   <project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="twrp-8.1" />
   <project path="device/lge/common" name="LineageOS/android_device_lge_common" remote="github" revision="lineage-15.1" />
   <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="twrp-8.1" />
