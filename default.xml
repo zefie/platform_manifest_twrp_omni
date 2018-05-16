@@ -623,4 +623,7 @@
   <!-- OmniROM -->
   <include name="omni-default.xml" />
 
+  <!-- zefie's config -->
+  <include name="zefie.xml" />
+
 </manifest>
