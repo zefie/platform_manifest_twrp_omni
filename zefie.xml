@@ -26,4 +26,8 @@
 	<linkfile src="core/java/android/security" dest="frameworks/base/core/java/android/security" />
   </project>
 
+  <project path="prebuilts/gcc/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
+
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-uber-6.x" name="zefie/binary_toolchains" remote="github" revision="uber-6.x-x86_64-aarch64" groups="pdk-fs" clone-depth="1" />
+
 </manifest>
