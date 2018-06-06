@@ -12,6 +12,7 @@
   <project path="vendor/lge" name="Rashed97/proprietary_vendor_lge" remote="github" revision="lineage-15.1" />
 
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="lineage-15.1" />
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-14.1" />
 
   <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="zefie/android_bootable_recovery" remote="github" revision="android-8.1" />
