@@ -3,7 +3,7 @@
 
   <include name="remove-minimal.xml" />
 
-  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="refs/tags/rel_nr2" clone-depth="1" />
+  <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="refs/tags/rel_o2" clone-depth="1" />
   <project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="twrp-8.1" />
   <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="twrp-8.1" />
   <project path="device/lge/h870" name="zefie/android_device_lge_h870" remote="github" revision="twrp-8.1" />
