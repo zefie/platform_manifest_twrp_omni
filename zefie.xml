@@ -7,13 +7,15 @@
   <project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="twrp-8.1" />
   <project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="twrp-8.1" />
   <project path="device/lge/h870" name="zefie/android_device_lge_h870" remote="github" revision="twrp-8.1" />
-  <project path="device/lge/common" name="LineageOS/android_device_lge_common" remote="github" revision="cm-14.1" />
 
+  <project path="device/lge/common" name="LineageOS/android_device_lge_common" remote="github" revision="cm-14.1" />
   <project path="vendor/lge" name="Rashed97/proprietary_vendor_lge" remote="github" revision="lineage-15.1" />
 
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="lineage-15.1" />
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-15.1" />
+
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
 
   <remove-project name="android_bootable_recovery" />
   <project path="bootable/recovery" name="zefie/android_bootable_recovery" remote="github" revision="android-8.1" />
