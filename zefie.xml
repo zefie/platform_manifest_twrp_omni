@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="remove-minimal.xml" />
+  <include name="default.xml" />
 
   <project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="refs/tags/rel_o2" clone-depth="1" />
   <project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="twrp-8.1" />
@@ -15,22 +15,13 @@
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-15.1" />
 
-
-  <remove-project name="platform/bootable/recovery" />
+  <remove-project name="android_bootable_recovery" />
   <project path="bootable/recovery" name="zefie/android_bootable_recovery" remote="github" revision="android-8.1" />
-
   <project path="development" name="android_development" remote="omnirom" revision="android-8.1" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/busybox" name="TeamWin/android_external_busybox" remote="github" revision="android-8.0" />
   <!-- <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="omnirom" revision="android-8.1" /> -->
 
-  <project path="TeamWin/.repo/frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-8.1" clone-depth="1" >
-	<linkfile src="core/java/android/content" dest="frameworks/base/core/java/android/content" />
-	<linkfile src="core/java/android/security" dest="frameworks/base/core/java/android/security" />
-  </project>
-
   <project path="prebuilts/gcc/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
-
   <project path="prebuilts/gcc/linux-x86/host/x86_64-uber-6.x" name="zefie/binary_toolchains" remote="github" revision="uber-6.x-x86_64-aarch64" groups="pdk-fs" clone-depth="1" />
 
 </manifest>

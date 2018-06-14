@@ -6,7 +6,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the OMNIROM trees to build TWRP, use a command like this:
 
-    repo init -u https://github.com/zefie/twrp_minimal_lgg6_manifest.git -b twrp-8.1
+    repo init -u https://github.com/zefie/twrp_minimal_lgg6_manifest.git -b twrp-8.1 -m zefie.xml
     
 Then to sync up:
 
