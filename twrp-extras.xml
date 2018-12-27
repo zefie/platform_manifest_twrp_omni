@@ -19,7 +19,7 @@
         <linkfile src="core/java" dest="frameworks/base/core/java" />
         <linkfile src="keystore/java" dest="frameworks/base/keystore/java" />
         <linkfile src="libs/services" dest="frameworks/base/libs/services" />
-    </project> />
+    </project>
 
 <!-- Use OmniROM busybox -->
     <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.1" />
