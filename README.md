@@ -56,6 +56,10 @@ Then to sync up:
 
     repo sync
 
-Then to build:
+Then to build for a device with recovery partition:
 
      cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka recoveryimage
+
+Then to build for a device without recovery partition:
+
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka bootimage
