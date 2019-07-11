@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
+    <!-- OrangeFox Recovery Manifest -->
+    <!-- Pie | 2018-2019 | R10.0 -->
+
     <remote name="TeamWin"
             fetch="https://github.com/TeamWin"
             review="https://gerrit.twrp.me" />
+    
+    <remote name="fox"
+            fetch="https://gitlab.com/OrangeFox/"
+            revision="refs/tags/R10.0" />
 
-<!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
+<!-- Remove unused projects -->
     <remove-project name="platform/bootable/recovery"/>
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-9.0"/>
+    <remove-project name="android_external_f2fs-tools"/>
+
+<!-- Add forked projects -->
+    <project name="Recovery" path="bootable/recovery" remote="fox" />
+    <project name="Vendor" path="vendor/recovery" remote="fox" />
+    <project name="f2fs-tools" path="external/f2fs-tools" remote="fox" />
+    <project path="external/busybox" name="android_external_busybox" remote="fox" revision="android-9.0" />
+    <project path="vendor/qcom/opensource/commonsys" name="android_vendor_qcom_opensource_commonsys" remote="fox" revision="android-9.0" />
+    
 
 <!-- Include external Magisk repo for repack binaries -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="master" />
+    <!--project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="master" /-->
 </manifest>
 
