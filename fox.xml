@@ -15,7 +15,7 @@
 <!-- Remove unused projects -->
     <remove-project name="platform/bootable/recovery"/>
     <remove-project name="android_build"/>
-    <remove-project name="android_external_f2fs-tools"/>
+    <!--remove-project name="android_external_f2fs-tools"/-->
     <remove-project name="android"/>  
 
 <!-- Add forked projects -->
@@ -31,7 +31,7 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
 
-    <project name="f2fs-tools" path="external/f2fs-tools" remote="fox" />
+    <!--project name="f2fs-tools" path="external/f2fs-tools" remote="fox" /-->
     <project path="external/busybox" name="android_external_busybox" remote="fox" revision="android-9.0" />
     <project path="vendor/qcom/opensource/commonsys" name="android_vendor_qcom_opensource_commonsys" remote="fox" revision="android-9.0" />
     
