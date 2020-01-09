@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="520" height="200" src="logo.jpg">
+  <img width="450" height="150" src="logo.jpg">
 </p>
 
 <a href="https://sourceforge.net/projects/orangefox/files"><img alt="Download OrangeFox" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
