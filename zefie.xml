@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="zefie-rpi4" fetch="https://gitlab.com/rpi4_android" />
+	<remote name="zefie" fetch="https://github.com/zefie" />
+	<project path="kernel/lge/msm8996" name="zefie/lge_g6_melina_kernel" remote="github" revision="android-9.0" clone-depth="1" />
+	<project path="device/lge/g6-common" name="zefie/android_device_lge_g6-common" remote="github" revision="fox_9.0" />
+	<project path="device/lge/us997" name="zefie/android_device_lge_us997" remote="github" revision="fox_9.0" />
+	<project path="device/lge/h870" name="zefie/android_device_lge_h870" remote="github" revision="fox_9.0" />
+
+	<remove-project name="android_bootable_recovery" />
+	<project path="bootable/recovery" name="zefie/android_bootable_recovery" remote="github" revision="fox_9.0" />
+
+</manifest>
+
